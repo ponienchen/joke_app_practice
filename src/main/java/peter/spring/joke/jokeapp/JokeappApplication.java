@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 //folder as this @SpringBootApplication-annotated class.
 //However, since that is not the case, we need to add the @ComponentScan
 //to tell this class where to find the components.
-@ComponentScan("peter.spring.joke")
+@ComponentScan(basePackages = {"peter.spring.joke"})
 public class JokeappApplication {
 
     public static void main(String[] args) {
